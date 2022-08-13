@@ -1,8 +1,9 @@
 function listener(){
 
-    let btn = document.getElementById('criptografar');
-    btn.addEventListener("click", criptografar);
-
+    let btnCrip = document.getElementById('criptografar');
+    btnCrip.addEventListener("click", criptografar);
+    let btnDesc = document.getElementById('descriptografar');
+    btnDesc.addEventListener("click", descriptografar);
 
 }
 
@@ -52,6 +53,61 @@ function criptografar(){
         alert("Nenhum texto digitado!!");
 
     }
+
+}
+
+function descriptografar(){
+
+    let mensagem = document.getElementById("mensagem").value;
+    let mensagem_desc = '';
+
+    if(mensagem.length > 0){
+
+        for(let i = 0; i < mensagem.length; i++){
+
+            switch(mensagem[i]){
+
+                case "e":
+                    mensagem_desc = mensagem_desc + "e";
+                    i = i + 4;
+                    break;
+
+                case "i":
+                    mensagem_desc = mensagem_desc + "i";
+                    i = i + 3;
+                    break;
+                
+                case "a":
+                    mensagem_desc = mensagem_desc + "a";
+                    i = i + 1;
+                    break;
+                
+                case "o":
+                    mensagem_desc = mensagem_desc + "o";
+                    i = i + 3;
+                    break;
+                
+                
+                case "u":
+                    mensagem_desc = mensagem_desc + "u";
+                    i = i + 3;
+                    break;
+
+                default:
+                    mensagem_desc = mensagem_desc + mensagem[i];
+
+            }
+
+        }
+
+        document.getElementById("criptografado").value = mensagem_desc;
+
+    }else{
+
+        alert("Nenhum texto digitado!!");
+
+    }
+
 
 }
 

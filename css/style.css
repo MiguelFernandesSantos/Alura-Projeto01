@@ -314,6 +314,7 @@ main{
 
 .send button{
 
+    margin: 0px 5vw;
     cursor: pointer;
     width: 20vh;
     height: 5vw;
