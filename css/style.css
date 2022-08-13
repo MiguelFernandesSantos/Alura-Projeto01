@@ -1,0 +1,336 @@
+/* tirando o css padrão */
+* {
+
+    margin: 0px;
+    padding: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: initial;
+
+}
+
+body{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+/* inicio css do menu lateral */
+
+main{
+
+    display: flex;
+
+}
+
+.Sobre{
+
+    display: inline-block;
+    width: 20vw;
+    height: 100vh;
+    background-color:rgb(187,0,0);
+    box-sizing: border-box;
+    padding: 1%;
+
+}
+
+.Sobre img{
+
+    display: block;
+    height: 30px;
+    width: 30px;
+
+}
+
+.Sobre h1{
+
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: initial;
+    margin-top: 5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.Sobre div{
+
+    display: flex;
+    justify-content: flex-end;
+    height: 4vh;
+    margin-right: -1vw;
+    margin-top: 3.1vw;
+
+}
+
+.Sobre div p{
+
+    background-color: white;
+    height: 1.5vw;
+    width: 15vw;
+
+}
+
+.Sobre > p{
+
+    margin: 25vh 0px;
+    color: white;
+    font-weight: none;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+/* fim css do menu lateral */
+
+
+.Conteudo{
+
+    display: inline-block;
+    width: 80vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(222,222,222,0.25);
+
+}
+
+
+/* inicio css do conteudo nav */
+
+.Conteudo_nav::before{
+
+    z-index:-1;
+    position: absolute;
+    content: '';
+    width: 78vw;
+    height: 2px;
+    background-color: rgb(187,0,0);
+
+}
+
+.Conteudo_nav{
+
+    display: flex;
+    width: 80vw;
+    height: 17.7vh;
+    box-sizing: border-box;
+    padding: 1vw 1vh;
+    align-items: center;
+
+
+}
+
+.Conteudo_nav ul{
+
+    width: 80vw;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+}
+
+.Conteudo_nav ul a{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    margin: 0px 5vw;
+    text-decoration: none;
+    background-color: rgb(187,0,0);
+    border: 2px solid white;
+    outline: 2px solid rgb(187,0,0);
+    color: white;
+    transition: transform 0.5s;
+
+}
+
+.Conteudo_nav ul a:hover{
+
+    transform: scale(1.05);
+    background-color: white;
+    border: 2px solid rgb(187,0,0);
+    outline: 3px solid white;
+    color: black;
+
+}
+
+.Conteudo_nav ul a li{
+
+
+    width: 10vw;
+    padding: 0.5vw;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+/* fim css do conteudo  nav*/
+
+/* inicio do css do main left */
+.Countedo_MainLeft{
+
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;
+    height: 70vh;
+    width: 39vw;
+
+}
+
+.Countedo_MainLeft .line{
+
+    display: flex;
+    justify-content: flex-start;
+    height: 4vh;
+    margin-right: -1vw;
+    margin-top: 1vw;
+
+}
+
+.Countedo_MainLeft .line p{
+
+    height: 100%;
+    background-color:rgb(187,0,0);
+    height: 1.5vw;
+    width: 15vw;
+
+}
+
+.Countedo_MainLeft .inserir{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+
+}
+
+.Countedo_MainLeft .inserir h2{
+    
+    margin: 1vw 0px;
+
+}
+
+.Countedo_MainLeft .inserir textarea{
+
+    height: 60vw;
+    width: 80%;
+    margin: 3vw 0px;
+    padding: 2%;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black; 
+    transition: box-shadow 1s, border 0.5s;
+
+}
+
+.Countedo_MainLeft textarea:hover{
+    
+    border:1px solid darkred;
+    box-shadow: 0 0 15px rgb(187,0,0); 
+
+}
+
+.Countedo_MainLeft textarea:focus{
+
+    outline: none;
+
+}
+
+/* fim do css do main left */
+
+/* inicio do css do main rigth */
+.Countedo_MainRigth{
+
+    box-sizing: border-box;
+    display: inline-block;
+    height: 70vh;
+    width: 40vw;
+
+}
+
+.Countedo_MainRigth div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+.Countedo_MainRigth h2{
+
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 10px;
+
+}
+
+.Countedo_MainRigth textarea{
+
+    height: 60vw;
+    width: 80%;
+    margin: 3vw 0px;
+    padding: 2%;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black; 
+    transition: box-shadow 1s, border 0.5s;
+
+}
+
+.Countedo_MainRigth textarea:hover{
+
+    box-shadow: 0 0 15px rgb(187,0,0); 
+    border:1px solid darkred;
+
+}
+
+.Countedo_MainRigth textarea:focus{
+
+    outline: none;
+
+}
+
+/* fim do css do main rigth */
+
+
+.send{
+
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.send button{
+
+    cursor: pointer;
+    width: 20vh;
+    height: 5vw;
+    background-color: rgb(187,0,0);
+    color: white;
+    border: 2px solid white;
+    outline: 2px solid rgb(187,0,0);;
+    transition: transform 0.5s;
+
+}
+
+.send button:hover{
+
+    transform: scale(1.05);
+    background-color: white;
+    border: 2px solid rgb(187,0,0);
+    outline: 2px solid white;
+    color: black;
+
+}
